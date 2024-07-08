@@ -1,0 +1,9 @@
+version: '2'
+services:
+  testapp:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: testapp
+    ports:
+      - 8000:8000
